@@ -87,10 +87,7 @@ class App {
     this.#getLocalStorage();
 
     form.addEventListener('submit', this.#newWorkout.bind(this));
-    containerWorkouts.addEventListener('click', e => {
-      this.#moveToPopup(e);
-      this.#toggleSlider();
-    });
+    containerWorkouts.addEventListener('click', this.#moveToPopup.bind(this));
     sidebarToggle.addEventListener('click', this.#toggleSlider);
     sidebarClose.addEventListener('click', this.#toggleSlider);
   }
@@ -122,9 +119,7 @@ class App {
     }).addTo(this.#map);
 
     // addEventListener = on
-    this.#map.on('click', () => {
-      this.#toggleSlider(), setTimeout(this.#showForm.bind(this), 300);
-    });
+    this.#map.on('click', this.#showForm.bind(this));
 
     this.#workouts.forEach(el => {
       this.#renderMarker(el);
@@ -148,6 +143,7 @@ class App {
 
   #newWorkout(e) {
     e.preventDefault();
+    console.log(this);
 
     const isValid = (...nums) => {
       return nums.every(el => el > 0);
@@ -284,8 +280,6 @@ class App {
   // move to Popup
   #moveToPopup(e) {
     const workoutEl = e.target.closest('.workout');
-
-    console.log(this);
 
     // Guard
     if (!workoutEl) return;
