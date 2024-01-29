@@ -10,7 +10,7 @@
   <p align="center">
    Map your workouts!
     <br /><br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>View Demo »</strong></a>
+    <a href="[https://github.com/othneildrew/Best-README-Template](https://mapty-project-demo.netlify.app/)"><strong>View Demo »</strong></a>
  <br /><br />
   </p>
 </div>
