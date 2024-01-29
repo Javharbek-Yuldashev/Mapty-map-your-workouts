@@ -19,7 +19,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://github.com/Javharbek-Yuldashev/Mapty-map-your-workouts/blob/master/mockup/desktop%20-%20mapty.png?raw=true" alt="project-screenshot" width="100%" height="400/">
+<p align="center">
+<img src="https://github.com/Javharbek-Yuldashev/Mapty-map-your-workouts/blob/master/mockup/desktop%20-%20mapty.png?raw=true" alt="project-screenshot" width="500" height="400/">
+</p>
 
 The project was built during the learning of the course "The Complete JavaScript Course: From Zero to Expert!" by <a href="#readme-top">Jonas Schmedtmann</a>.  It helps to find easily your workout places on a map that you planned and information about them
 
